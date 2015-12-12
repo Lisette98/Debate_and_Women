@@ -25,9 +25,50 @@
         <style>
                 body {
                     height: 100%;
-                   background-image:url('img/women.jpg');
+                   background-image:url('img/women2.jpg');
                     background-repeat:no-repeat;
                     background-size:cover;
+                    
+}  
+
+                }
+
+                .text h2 {
+                  color: #E5E5E5;
+                  font-size: 30px;
+                  font-style: normal;
+                  font-variant: normal;
+                  font-weight: lighter;
+                  letter-spacing: 2px;
+                }
+
+                .counter {
+                 
+                  
+                }
+
+                .counter h3 {
+                  color: #000000;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-variant: normal;
+                  font-weight: lighter;
+                  letter-spacing: 1px;
+                  padding-top: 20px;
+                  margin-bottom: 30px;
+                }
+
+                #countdown {
+                  color: #000000;
+                }
+
+                #countdown span {
+                  color: #000000;
+                  font-size: 26px;
+                  font-weight: normal;
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  text-align: center;
                 }
 
         </style>
@@ -85,12 +126,32 @@
 
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1 class="cover-heading">Why Isn't There a Women's Debate?</h1>
+            <p class="lead">1920 - Right to Vote <br />
+        2015 - Right to Debate</p>
+            
+                               
+                            </div> <!-- /.Container Div -->
+
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <a href="#" class="btn btn-lg btn-default">Join Us</a>
             </p>
           </div>
+
+          <div class="container">
+                            <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 col-md-offset-2  col-md-8 col-sm-12 col-xs-12">
+                             
+
+                            <div class="counter">
+                             <p class="lead">Estimated Time Remaining Before Election:</p>
+                            <div id="countdown">
+                              
+                            </div><!-- /#Countdown Div -->
+                            </div> <!-- /.Counter Div -->
+                            
+                            </div> <!-- /.Columns Div -->
+                            </div> <!-- /.Row Div -->
 
           <div class="mastfoot">
             <div class="inner">
@@ -121,5 +182,41 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+        <!--COUNTDOWN CLOCK -->
+
+         <script>  // set the date we're counting down to
+var target_date = new Date('November, 8, 2016').getTime();
+ 
+// variables for time units
+var days, hours, minutes, seconds;
+ 
+// get tag element
+var countdown = document.getElementById('countdown');
+ 
+// update the tag with id "countdown" every 1 second
+setInterval(function () {
+ 
+    // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+    // format countdown string + set tag value
+    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
+    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
+ 
+}, 1000);</script>
+   
+<!--END OF COUNTDOWN CLOCK -->
     </body>
 </html>
