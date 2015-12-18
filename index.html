@@ -24,14 +24,10 @@
 
         <style>
                 body {
-                    height: 100%;
-                     background-color:rgba(0,0,0,0.8);
-                   background-image:url('img/hands2.jpg');
-                    background-repeat:no-repeat;
-                    background-size:cover;
-                
+                    
+                    }
 
-                }
+                
 
 
                 .pic-text {
@@ -95,15 +91,37 @@
 
               color:#ffffff;
             }
+
+          .background {
+            background:url("img/hands2.jpg");
+            position: relative;
+            height: 100%;
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                  }
+                  
+
+            .layer {
+              background-color: rgba(0, 0, 0, 0.3);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+
+           }
+
+
         </style>
   
     </head>
-    <body >
+    <body class="background" >
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="site-wrapper">
+
+    <div class="site-wrapper layer">
 
       <div class="site-wrapper-inner">
 
@@ -140,7 +158,7 @@
 
 
           <div class="inner cover">
-            <h1 class="pic-text">Why Isn't There a Women's Debate?</h1>
+            <h1 class="pic-text">Isn't It Time for Presidential Candidates to go on record regarding issues that impact women?</h1>
             <p class="lead pic-text">1920 - Right to Vote <br />
         2015 - Right to Debate</p>
             
