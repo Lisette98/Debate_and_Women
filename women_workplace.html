@@ -52,6 +52,12 @@
    
 }
 
+.breadcrumb > li + li:before {
+   color: #CCCCCC;
+   content: "/ ";
+   padding: 0 5px;
+   
+}
 
 
     </style>
@@ -133,14 +139,19 @@
     ====================================================== -->
     <section class="blog-main">
     	<div class="container clearfix">
-             <br /><br />
+             <br />
             <!-- Start: Blog Left Container -->
             <div class="col-md-9 blog-left">
-            
+            <ol class = "breadcrumb">
+                   <li><a href = "index.html">Home</a></li>
+                   <li><a href = "issues.html">Issues</a></li>
+                   <li class = "active">Women’s Economic Opportunities</li>
+                </ol>
+        
             
                 <!-- Start: Blog 02 -->
                 <div class="blog-single">
-                    <div class="post-media"><img src="img/issues/women-work.jpg" alt="" style="width:500px;border:5px solid black;border-radius:8px;"></div>
+                    <div class="post-media"><img src="img/issues2/business.jpg" alt="" style="width:500px;border:5px solid black;border-radius:8px;"></div>
                     <div class="post-title">
                         <h3 >Women’s Economic Opportunities</h3>
                     </div>
